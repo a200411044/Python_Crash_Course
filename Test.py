@@ -99,6 +99,8 @@
 #    print('My favorite food is ' + foods.title() + '!\n')
 
 #print('I really like these kind of foods!\n')
+
+#4-2
 #print('For pets:')
 #pet = ['dog', 'cat', 'owl']
 
@@ -158,5 +160,58 @@ for value in range(1,11):
 squares = [value**2 for value in range(1,11)]
 print(squares)
 '''
+
+#4-10
+'''
+players = ['simon', 'peter', 'tom', 'amy', 'tim']
+
+print('The first three items in the list are:')
+print(players[0:3])
+
+print('\nThree items from the middle of the list are:')
+print(players[2:5])
+
+print('\nThe last three items in the list are:')
+print(players[2:])
+'''
+
+#4-11
+'''
+print('For foods:\n')
+foods = ['ice cream', 'sushi', 'uni', 'cake']
+friend_foods = foods[:]
+
+foods.append('pie')
+friend_foods.append('falafel')
+
+for foods in foods:
+    print('My favorite foods are:')
+    print(foods.title())
+
+print('\n')
+
+for friend_foods in friend_foods:
+    print("My friend's favorite foods are:")
+    print(friend_foods.title())
+
+print('I really like these kind of foods!\n')
+'''
+
+#4-12
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]
+
+my_foods.append('cannoli')
+friend_foods.append('ice cream')
+
+print("My favorite foods:")
+for my_foods in my_foods:
+    print(my_foods.title())
+
+print("\nMy friend's favorite foods:")
+
+for friend_foods in friend_foods:
+    print(friend_foods.title())
+
 
 
