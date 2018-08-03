@@ -337,6 +337,7 @@ else:
 '''
 
 # 5-6
+'''
 age = 5
 if age < 2:
     print("You are baby!")
@@ -350,3 +351,89 @@ elif age < 65:
     print("You are adult!")
 else:
     print("You are elderly!")
+'''
+
+# 5-7
+'''
+favorite_fruits = ['apple', 'banana', 'watermelon']
+if 'apple' in favorite_fruits:
+    print('You really like apple!\n')
+if 'banana' in favorite_fruits:
+    print('You really like banana!\n')
+if 'watermelon' in favorite_fruits:
+    print('You really like watermelon!\n')
+if 'orange' in favorite_fruits:
+    print('You really like orange!')
+if 'mango' in favorite_fruits:
+    print('You really like mango!')
+'''
+
+# 5-8
+'''
+user = ['simon', 'amy', 'tom', 'alice', 'admin']
+for user in user:
+    if user == 'admin':
+        print("Hello admin, would you like to see a status report?")
+    else:
+        print("Hello " + user.title() + ", thank you for logging in again")
+'''
+
+# 5-9
+'''
+user = []
+if user:
+    for user in user:
+        if user == 'admin':
+            print("Hello admin, would you like to see a status report?")
+        else:
+            print("Hello " + user.title() + ", thank you for logging in again")
+else:
+    print("We need to find more users!")
+'''
+
+# 5-10***
+'''
+current_users = ['SIMON', 'amy', 'tom', 'alice', 'admin']
+new_users = ['Simon', 'Amy', 'jack', 'tommy', 'motherfucker']
+
+current_users_lower = [user.lower() for user in current_users]
+
+
+for new_users in new_users:
+    if new_users.lower() in current_users_lower:
+        print("User " + new_users + " already exist!")
+    else:
+        print("User name is available!")
+'''
+
+# 5-11
+'''
+value = range(1,10)
+for value in value:
+    if value == 1:
+        print('1st')
+    elif value == 2:
+        print('2nd')
+    elif value == 3:
+        print('3rd')
+    else:
+        print(str(value) + 'th')
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
