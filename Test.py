@@ -337,8 +337,7 @@ else:
 '''
 
 # 5-6
-age = ''
-input('How old are you:')
+age = 5
 if age < 2:
     print("You are baby!")
 elif age < 4:
