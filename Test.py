@@ -198,6 +198,7 @@ print('I really like these kind of foods!\n')
 '''
 
 #4-12
+'''
 my_foods = ['pizza', 'falafel', 'carrot cake']
 friend_foods = my_foods[:]
 
@@ -212,6 +213,69 @@ print("\nMy friend's favorite foods:")
 
 for friend_foods in friend_foods:
     print(friend_foods.title())
+'''
+
+#4-13
+'''
+buffet_food_list = ['cake', 'steak', 'ice cream', 'oyster', 'sea food']
+print("Original Food list:")
+for buffet_food_list in buffet_food_list:
+    print(buffet_food_list.title())
+    #buffet_food_list[3] = 'candy'
+
+buffet_food_list = ['cake', 'pork', 'candy', 'oyster', 'sea food']
+print("\nNew food list:")
+for buffet_food_list in buffet_food_list:
+    print(buffet_food_list.title())
+'''
+
+#5-1
+'''
+car = 'subaru'
+print("Is car == 'subaru'? I predict True.")
+print(car == 'subaru')
+
+print("\nIs car == 'audi'? I predict False.")
+print(car == 'audi', '\n')
+
+
+print(car == 'bmw', '\n')
+print(car == 'benz', '\n')
+print(car == 'subaru', '\n')
+print(car == 'fuck', '\n')
+print(car == 'gtr', '\n')
+print(car == 'tesla', '\n')
+print(car == 'truck', '\n')
+print(car == 'honda', '\n')
+print(car == 'toyota', '\n')
+print(car == 'subaru', '\n')
+'''
+
+#5-2
+name = ['simon', 'tom']
+print(name[0] == 'simon')
+print(name[1] != 'Tom')
+print(name[1].lower() == 'tom')
+age = 18
+print(age == 18)
+print(age != 19)
+print(age >= 10)
+print(age <= 20)
+
+age_0 = 18
+age_1 = 21
+
+print(age_0 >= 10 and age_1 <= 22 )
+print(age_0 >= 10 or age_1 <= 20)
+
+users = ['simon', 'tom', 'mary', 'amy']
+print('\nIs user Simon on the users list?')
+print('simon' in users)
+print('\nIs user Tommy on the users list?')
+print('tommy' in users)
+
+
+
 
 
 
