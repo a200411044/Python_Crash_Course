@@ -17,10 +17,10 @@
 #print(4*2)
 #print(16/2)
 
-#my_age = 19
+# my_age = 19
 #print("I'm Simon, and I'm " + str(my_age) + " years old!")
 
-#3-4:
+# 3-4:
 #invite_list = ['steve jobs', 'bill gates', 'apink', 'g-friend']
 #print("I world like to invite " + invite_list[0].title() + " to have dinner with me!")
 #print("I world like to invite " + invite_list[1].title() + " to have dinner with me!")
@@ -60,7 +60,7 @@
 
 #print(invite_list)
 
-#3-8
+# 3-8
 #travel_list = ['osaka', 'kyoto', 'paris', 'new yorks', 'canada']
 #print('Original list:')
 #print(travel_list)
@@ -90,7 +90,7 @@
 #travel_list.sort(reverse=True)
 #print(travel_list)
 
-#4-1
+# 4-1
 #print('For foods:')
 #foods = ['ice cream', 'sushi', 'uni', 'cola']
 
@@ -100,7 +100,7 @@
 
 #print('I really like these kind of foods!\n')
 
-#4-2
+# 4-2
 #print('For pets:')
 #pet = ['dog', 'cat', 'owl']
 
@@ -109,17 +109,17 @@
 
 #print("Any of these animals would make a great pet!")
 
-#4-3 1-20
+# 4-3 1-20
 #for value in range(1,21):
 #    print(value)
 
-#4-4 1-100k
+# 4-4 1-100k
 '''
 for value in range(1,1000001):
     print(value)
 '''
 
-#4-5
+# 4-5
 '''
 one_to_10k = range(1,1000001)
 print(min(one_to_10k))
@@ -127,7 +127,7 @@ print(max(one_to_10k))
 print(sum(one_to_10k))
 '''
 
-#4-6
+# 4-6
 '''
 odd_numbers = list(range(1,21,2))
 print(odd_numbers)
@@ -137,7 +137,7 @@ for odd_numbers in odd_numbers:
 print('And these are the odd numbers in 1-20')
 '''
 
-#4-7
+# 4-7
 '''
 multiple_of_3 = list(range(3,31,3))
 print(multiple_of_3)
@@ -147,7 +147,7 @@ for multiple_of_3 in multiple_of_3:
 print('And these are the multiply of 3')
 '''
 
-#4-8
+# 4-8
 '''
 squares = []
 for value in range(1,11):
@@ -155,13 +155,13 @@ for value in range(1,11):
     print(squares)
 '''
 
-#4-9
+# 4-9
 '''
 squares = [value**2 for value in range(1,11)]
 print(squares)
 '''
 
-#4-10
+# 4-10
 '''
 players = ['simon', 'peter', 'tom', 'amy', 'tim']
 
@@ -175,7 +175,7 @@ print('\nThe last three items in the list are:')
 print(players[2:])
 '''
 
-#4-11
+# 4-11
 '''
 print('For foods:\n')
 foods = ['ice cream', 'sushi', 'uni', 'cake']
@@ -197,7 +197,7 @@ for friend_foods in friend_foods:
 print('I really like these kind of foods!\n')
 '''
 
-#4-12
+# 4-12
 '''
 my_foods = ['pizza', 'falafel', 'carrot cake']
 friend_foods = my_foods[:]
@@ -215,7 +215,7 @@ for friend_foods in friend_foods:
     print(friend_foods.title())
 '''
 
-#4-13
+# 4-13
 '''
 buffet_food_list = ['cake', 'steak', 'ice cream', 'oyster', 'sea food']
 print("Original Food list:")
@@ -229,7 +229,7 @@ for buffet_food_list in buffet_food_list:
     print(buffet_food_list.title())
 '''
 
-#5-1
+# 5-1
 '''
 car = 'subaru'
 print("Is car == 'subaru'? I predict True.")
@@ -251,7 +251,8 @@ print(car == 'toyota', '\n')
 print(car == 'subaru', '\n')
 '''
 
-#5-2
+# 5-2
+'''
 name = ['simon', 'tom']
 print(name[0] == 'simon')
 print(name[1] != 'Tom')
@@ -273,9 +274,80 @@ print('\nIs user Simon on the users list?')
 print('simon' in users)
 print('\nIs user Tommy on the users list?')
 print('tommy' in users)
+'''
 
+# 5-3
+'''
+# Version 1
+alien_color = ['green', 'yellow', 'red']
+if 'green' in alien_color:
+    print("You have gained 5 points!")
 
+# Version 2
+alien_color = ['green', 'yellow', 'red']
+if 'blue' in alien_color:
+    print("You have gained 5 points!")
+'''
 
+# 5-4
+'''
+# Version 1
+alien_color = ['green', 'yellow', 'red']
+if 'green' in alien_color:
+    print('You have gained 5 points!\n')
+if 'black' in alien_color:
+    print('You have gained 10 points!\n')
 
+# Version 2
+alien_color = ['green', 'yellow', 'red']
+if 'green' in alien_color:
+    print('You have gained 5 points!\n')
+else:
+    print("You have gained 10 points!\n")
+'''
 
+# 5-5
+# Version 1
+'''
+alien_color = ['green', 'yellow', 'red']
+if 'green' in alien_color:
+    print("You have gained 5 points!\n")
+elif 'yellow' in alien_color:
+    print("You have gained 10 points!\n")
+else:
+    print("You have gained 15 points!\n")
 
+# Version 2
+alien_color = ['green', 'yellow', 'red']
+if 'black' in alien_color:
+    print("You have gained 5 points!\n")
+elif 'yellow' in alien_color:
+    print("You have gained 10 points!\n")
+else:
+    print("You have gained 15 points!\n")
+
+# Version 3
+alien_color = ['green', 'yellow', 'red']
+if 'black' in alien_color:
+    print("You have gained 5 points!\n")
+elif 'blue' in alien_color:
+    print("You have gained 10 points!\n")
+else:
+    print("You have gained 15 points!\n")
+'''
+
+# 5-6
+age = ''
+input('How old are you:')
+if age < 2:
+    print("You are baby!")
+elif age < 4:
+    print("You are learning to walk!")
+elif age < 13:
+    print("You are child!")
+elif age < 20:
+    print("You are teenager!")
+elif age < 65:
+    print("You are adult!")
+else:
+    print("You are elderly!")
