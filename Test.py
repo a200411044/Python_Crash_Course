@@ -420,6 +420,402 @@ for value in value:
         print(str(value) + 'th')
 '''
 
+# 6-1
+'''
+me = {'first_name': 'simon',
+      'last_name': 'law',
+      'age': 19,
+      'city': 'hk'}
+print(me)
+'''
+
+# 6-2
+'''
+favorite_number = {'tom': 1,
+                   'amy': 2,
+                   'simon': 3,
+                   'mary': 4,
+                   'jack': 5}
+
+num = favorite_number['tom']
+print("Tom's favorite number is " + str(num))
+num = favorite_number['amy']
+print("Amy's favorite number is " + str(num))
+num = favorite_number['simon']
+print("Simon's favorite number is " + str(num))
+num = favorite_number['mary']
+print("Mary's favorite number is " + str(num))
+num = favorite_number['jack']
+print("Jack's favorite number is " + str(num))
+
+'''
+
+# 6-3
+'''
+python_language = {'print': "Print the statements",
+                   'if': 'If the statement is valid, run the command.',
+                   'elif': 'If the above statement is invalid, check this statement'
+                           ', if valid, run the command.',
+                   'else': "If all the above statement is invalid, run "
+                           "the command",
+                   'xxx = {}': 'Create a dictionary'}
+
+word = 'print'
+print("\n" + word.title() + ': ' + python_language['print'])
+word = 'if'
+print("\n" + word.title() + ': ' + python_language['if'])
+word = 'elif'
+print("\n" + word.title() + ': ' + python_language['elif'])
+word = 'else'
+print("\n" + word.title() + ': ' + python_language['else'])
+word = 'xxx = {}'
+print("\n" + word.title() + ': ' + python_language['xxx = {}'])
+'''
+
+# 6-4
+'''
+python_glossary = {'print': "Print the statements",
+                   'if': 'If the statement is valid, run the command.',
+                   'elif': 'If the above statement is invalid, check this statement'
+                           ', if valid, run the command.',
+                   'else': "If all the above statement is invalid, run "
+                           "the command",
+                   'xxx = {}': 'Create a dictionary',
+                   'list.append': 'Add something into list',
+                   'name.title()': 'name format',
+                   'name.upper': 'format name to upper',
+                   'name.lower': 'format name to lower',
+                   'for': 'loop the list to collect data'}
+
+for glossary in python_glossary.keys():
+    print(glossary.title())
+'''
+
+# 6-5
+'''
+river = {'nile': 'egypt',
+         'amazon': 'south america',
+         'chang jiang': 'china'}
+for name, country in river.items():
+    print("The " + name.title() + " runs through " +
+          country.title() + "!")
+
+print("\nName of rivers:")
+for name in river.keys():
+    print(name.title())
+
+print("\nName of the country:")
+for country in river.values():
+    print(country.title())
+'''
+
+# 6-6
+'''
+people = {
+    "me": {
+        'first_name': 'simon',
+        'last_name': 'law',
+        'age': 19,
+        'city': 'hong kong'
+        },
+
+    "mary": {
+        'first_name': 'mary',
+        'last_name': 'ho',
+        'age': 23,
+        'city': 'tokyo'
+        },
+
+    "tom": {
+        'first_name': 'tom',
+        'last_name': 'chan',
+        'age': 20,
+        'city': 'new york'
+        }
+    }
+
+for people_name, people_info in people.items():
+    print('Name: ' + people_name.title())
+    full_name = people_info['first_name'] + " " + people_info['last_name']
+    age = people_info['age']
+    city = people_info['city']
+
+    print('\tFull name: ' +  full_name.title())
+    print('\tAge: ' + str(age))
+    print("\tCity: " + city.title())
+'''
+
+# 6-8
+'''
+pets = {
+    'fat_b': {
+        'type': 'cats',
+        'owner': 'simon'
+    },
+
+    'bobo': {
+        'type': 'dogs',
+        'owner': 'simon'
+    },
+
+    'oppa': {
+        'type': 'dogs',
+        'owner': 'swc'
+    },
+}
+
+for pet_name, pet_info in pets.items():
+    print("Pet's name: " + pet_name.title())
+    types = pet_info['type']
+    owner = pet_info['owner']
+
+    print("\t" + pet_name.title() + " is a " + types + "!")
+    print("\t" + pet_name.title() + " belongs to " + owner.title() + "!")
+'''
+
+# 6-9
+'''
+favorite_places = {
+    'simon': ['osaka', 'thailand', 'paris'],
+    'tom': ['new york', 'poland', 'italy'],
+    'mary': ['london', 'india', 'singapore']
+    }
+
+for name, places in favorite_places.items():
+    print("\n" + name.title() + "'s favorite places are:")
+    for place in places:
+        print("\t" + place.title())
+'''
+
+# 6-10
+'''
+favorite_number = {'tom': [1, 7, 9],
+                   'amy': [2, 4, 6],
+                   'simon': [3, 24, 49],
+                   'mary': [4, 16, 54],
+                   'jack': [5, 25, 125]
+                   }
+
+for name, numbers in favorite_number.items():
+    print("\n" + name.title() + "'s favorite numbers are: ")
+    for number in numbers:
+        print("\t" + str(number))
+'''
+
+# 6-11
+'''
+cities = {
+    'tokyo': {
+        'country': 'japan',
+        'population': 9262046,
+        'fact': "It's the capital of Japan."
+    },
+
+    'hong kong': {
+        'country': 'china',
+        'population': 7347000,
+        'fact': "The property price is too high here!"
+    },
+
+    'new york': {
+        'country': 'america',
+        'population': 8538000,
+        'fact': "Weed in here is legal!"
+    },
+}
+
+for city_name, city_info in cities.items():
+    print("\nHere is the info of " + city_name.title() + ": ")
+    country = city_info['country']
+    population = str(city_info['population'])
+    fact = city_info['fact']
+    print("\tCountry: " + country.title())
+    print("\tPopulation: " + population)
+    print("\tFact: " + fact)
+'''
+
+# 6-12
+'''
+skipped
+'''
+
+# 7-1
+'''
+car = input("What car do you want to rent? ")
+
+print("\nLet me see if I can find you a " + car.title())
+'''
+
+# 7-2
+'''
+people = input("How many people do you have? ")
+people = int(people)
+
+if people >= 8:
+    print("Sorry, We don't have emtpy tables now.")
+else:
+    print("Tables are available!")
+'''
+
+# 7-3
+'''
+number = input("Input a number and i tell you if it's a factor of 10: ")
+number = int(number)
+
+if number % 10 == 0:
+    print("\t" + str(number) + " is the factor of 10!")
+else:
+    print("\t" + str(number) + " is not a factor of 10...")
+'''
+
+# 7-4
+'''
+toppings = "\nWhat would you want to add to your pizza?"
+toppings += "\nEnter 'quit' to exit the program. "
+message = ""
+while message != 'quit':
+    message = input(toppings)
+
+    if message != 'quit':
+        print("We will add " + message + " into your pizza!")
+'''
+
+# 7-5
+'''
+age = input("How old are you? ")
+age = int(age)
+
+if age <= 3:
+    print("Your price will be free!")
+elif age <= 12:
+    print("Your price will be 10.")
+else:
+    print("Your price will be 15.")
+'''
+
+# 7-6
+# Version 1
+'''
+toppings = "\nWhat would you want to add to your pizza?"
+toppings += "\nEnter 'quit' to exit the program. "
+message = ""
+
+while message != 'quit':
+    message = input(toppings)
+
+    if message != 'quit':
+        print("We will add " + message + " on your pizza!")
+'''
+
+# Version 2
+'''
+toppings = "\nWhat would you want to add to your pizza?"
+toppings += "\nEnter 'quit' to exit the program. "
+
+active = True
+while active:
+    message = input(toppings)
+    if message == 'quit':
+        active = False
+    else:
+        print("We'll add " + message + " on your pizza!")
+'''
+
+# Version 3
+'''
+toppings = "\nWhat would you want to add to your pizza?"
+toppings += "\nEnter 'quit' to exit the program. "
+
+while True:
+    message = input(toppings)
+
+    if message == 'quit':
+        break
+    else:
+        print("We'll add " + message + " on your pizza!")
+'''
+
+# 7-7
+'''
+x = 1
+while x <= 5:
+    print(x)
+    x += 1
+'''
+
+# 7-8
+'''
+sandwich_orders = ['subway', "mcdonald's", 'fuck']
+finished_sandwiches = []
+
+while sandwich_orders:
+    current_order = sandwich_orders.pop()
+
+    print("We are making " + current_order + " for you now...")
+    finished_sandwiches.append(current_order)
+
+for finished_sandwich in finished_sandwiches:
+    print("\tI made you a " + finished_sandwich + " sandwich!")
+'''
+
+# 7-9
+'''
+sandwich_orders = ['subway', 'pastrami', "mcdonald's", 'pastrami', 'fuck', 'pastrami']
+finished_sandwiches = []
+print('\nThe pastrami sandwich was sold out!\n')
+
+while 'pastrami' in sandwich_orders:
+    sandwich_orders.remove('pastrami')
+
+while sandwich_orders:
+    current_order = sandwich_orders.pop()
+
+    print("We are making " + current_order + " for you now...")
+    finished_sandwiches.append(current_order)
+
+for finished_sandwich in finished_sandwiches:
+    print("\tI made you a " + finished_sandwich + " sandwich!")
+'''
+
+# 7-10
+'''
+responses = {}
+
+report_active = True
+
+while report_active:
+    name = input("\nWhat's your name: ")
+    response = input("If you could visit one place in the world, where would you go? ")
+
+    responses[name] = response
+
+    repeat = input("Would you like to invite your friends to play? yes/ no:")
+    if repeat == "no":
+        report_active = False
+
+print("--- Result ---")
+for name, response in responses.items():
+    print(name.title() + " would like to go " + response.title() +
+          " for vacation!")
+'''
+
+# 8-1
+'''
+def display_message(name):
+    print("Fuck you! " + name.title())
+
+display_message('LMY')
+'''
+
+# 8-2
+'''
+def favorite_book(title):
+    print("One of my favorite book is " + title.title() + "!")
+
+favorite_book('alice in wonderland')
+'''
+
+
 
 
 
